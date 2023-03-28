@@ -1,7 +1,5 @@
 # Pizza-Delivery-API
 A Pizza Delivery API project for a pizza delivery service.
-Available Routes
-METHOD	ROUTE	FUNCTIONALITY	ACCESS
 |METHOD     | ROUTE     | FUNCTIONALITY            | ACCESS
 | :------------ |   :---:       | --------:        |--------:
 | POST        | /api/signup       | Register new user        |All users
