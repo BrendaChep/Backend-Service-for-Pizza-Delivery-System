@@ -1,4 +1,4 @@
-# Pizza-Delivery-API
+# Pizza-Delivery-API.
 A Pizza Delivery API project for a pizza delivery service.
 |METHOD     | ROUTE     | FUNCTIONALITY            | ACCESS
 | :------------ |   :---:       | --------:        |--------:
