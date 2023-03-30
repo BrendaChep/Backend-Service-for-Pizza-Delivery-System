@@ -1,5 +1,5 @@
-# Pizza-Delivery-API.
-A Pizza Delivery API project for a pizza delivery service.
+# Pizza-Delivery-System.
+A Pizza Delivery backend service using Python, Jinja2Templates, FastAPI, SQLAlchemy and Pydantic Models for data validation.
 |METHOD     | ROUTE     | FUNCTIONALITY            | ACCESS
 | :------------ |   :---:       | --------:        |--------:
 | POST        | /api/signup       | Register new user        |All users
