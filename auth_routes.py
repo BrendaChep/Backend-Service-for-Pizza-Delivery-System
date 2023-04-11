@@ -18,10 +18,6 @@ auth_router = APIRouter(
 
 session = Session(bind=engine)
 
-@auth_router.get("/sign-up", response_class=HTMLResponse)
-async def show_signup_form(request: Request):
-     return templates.TemplateResponse("signup.html", {"request": request})
-
 @auth_router.get('/')
 async def hello(Authorize:AuthJWT=Depends()):
 
@@ -35,8 +31,8 @@ async def hello(Authorize:AuthJWT=Depends()):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail='Invalid Token')
     return {'message':'hello world'}
 
-@auth_router.post('/signup',response_model=SignUpModel,status_code=status.HTTP_201_CREATED)
-async def signup(username: str = Form(...),email: str = Form(...),password: str = Form(...)):
+@auth_router.post('/signup',status_code=status.HTTP_201_CREATED)
+async def signup(user:SignUpnModel,Authorize:AuthJWT=Depends()):
 
     """
     Creates a user. This requires the following
