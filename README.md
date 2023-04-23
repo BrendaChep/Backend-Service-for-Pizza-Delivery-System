@@ -1,6 +1,6 @@
 ## **Pizza Delivery Backend System**
 
-REST APIs for a simple Pizza Delivery backend service using Python, Jinja2Templates, FastAPI, SQLAlchemy and Pydantic Models for data validation.
+REST APIs for a simple Pizza Delivery backend service using Python, Jinja2Templates, FastAPI, SQLAlchemy, and Pydantic Models for data validation.
 |METHOD     | ROUTE     | FUNCTIONALITY            | ACCESS
 | :------------ |   :---:       | --------:        |--------:
 | POST        | /api/signup       | Register new user        |All users
